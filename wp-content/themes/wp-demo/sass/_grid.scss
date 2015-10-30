@@ -1,0 +1,77 @@
+gridDOWNLOADMOREJOIN
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+$grid-gutter: 2%;
+
+.row {
+	width: 85%;
+	max-width: 1100px;
+	margin: 0 auto;
+	@include clearfix;
+}
+
+.column {
+	float: left;
+	margin-right: $grid-gutter;
+
+	&.half {
+		width: (100% - ($grid-gutter * 1)) / 2;
+	}
+
+	&.third {
+		width: (100% - ($grid-gutter * 2)) / 3;
+	}
+
+	&.fourth {
+		width: (100% - ($grid-gutter * 3)) / 4;
+	}
+
+	&.fifth {
+		width: (100% - ($grid-gutter * 4)) / 5;
+	}
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	@include breakpoint(phone) {
+		width: 100% !important;
+		margin-right: 0;
+	}
+}
