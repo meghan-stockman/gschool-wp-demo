@@ -224,11 +224,54 @@ th {
       width: 100% !important;
       margin-right: 0; } }
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', helvetica, sans-serif; }
+
+a {
+  -webkit-transition: all 333ms ease-in-out;
+          transition: all 333ms ease-in-out; }
+  a:hover {
+    color: #FFFFFF; }
+
+iframe {
+  max-width: 100%; }
+
 #masthead {
   background: #54727D; }
   #masthead img {
     float: left;
     width: 200px;
     margin: 1em 0; }
+    @media (max-width: 800px) {
+      #masthead img {
+        float: none;
+        width: 100%; } }
+  #masthead .row {
+    margin-bottom: 0; }
+  #masthead nav {
+    float: right;
+    text-align: right; }
+    @media (max-width: 800px) {
+      #masthead nav {
+        float: none;
+        text-align: center; } }
+  @media (max-width: 800px) {
+    #masthead {
+      text-align: center; } }
+
+nav {
+  margin-top: 21px; }
+  @media (max-width: 800px) {
+    nav {
+      margin-top: 10px; } }
+  nav a {
+    margin-right: 20px;
+    font-size: 13px;
+    color: #444351;
+    text-decoration: none; }
+    nav a:last-of-type {
+      margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
