@@ -24,6 +24,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'variables';
 @import 'mixins';
 @import 'grid';
-@import 'default';
+
+@import 'typography';
+@import 'links';
+@import 'buttons';
 
 @import 'modules/header';
+@import 'modules/footer';

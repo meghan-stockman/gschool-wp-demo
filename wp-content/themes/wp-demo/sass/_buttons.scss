@@ -1,0 +1,13 @@
+.button,
+button,
+input[type="submit"] {
+	@include no-webkit;
+	background: orange;
+	color: white;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	display: inline-block;
+	
+	&.blue { background: blue;}
+	&.black { background: black;}
+}

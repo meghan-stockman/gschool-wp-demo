@@ -8,44 +8,44 @@
 	@include breakpoint (tablet) {
 		float: none;
 		width: 100%; }
-	}
+	} // img
 
- .row {
- 	margin-bottom: 0;
- }
+ .menu-main-navigation-container {
+ float: right;
+ 
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 1em;
+        
+        
+        &:last-of-type {
+            margin-right: 0;  
+        } // last
 
- nav {
-    float: right;
-    text-align: right;
+        a {
+          @include ease;
+          color: $dark-blue;
+          text-decoration: none;
+
+
+          &:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+            } // hover 
+          } // a
+
+    } // li
 
     @include breakpoint(tablet) {
-      float: none;
-      text-align: center;
-    } 
+        float: none;
+        text-align: center;
+      } // break
+
+  } // container
+
+  .menu-toggle {
+    display: none;
   }
 
-  @include breakpoint(tablet){
-    text-align: center;
-  }
-
-}
-
-nav {
-
-  margin-top: 21px;
-  @include breakpoint(tablet){
-    margin-top: 10px;
-  }
-
-
-  a {
-    margin-right: 20px;
-    font-size: 13px;
-    color: $dark-blue;
-    text-decoration: none;
-  
-    &:last-of-type {
-      margin: 0;
-    }
-  }
-}
+} //masthead

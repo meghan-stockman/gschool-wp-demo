@@ -1,0 +1,8 @@
+a {
+	color: $dark-blue;
+	@include ease;
+
+	&:hover {
+		color: blue;
+	}
+}

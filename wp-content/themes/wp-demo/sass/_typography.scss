@@ -1,0 +1,53 @@
+* {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+$font-sans: 'Source Sans Pro', Helvetica, sans-serif;
+$font-serif: 'Arvo', serif;
+
+@mixin font ($style, $size: null) {
+    
+    @if $size {
+     font-size: $size;
+    }
+
+    //Set sans serif font
+    @if $style == sans {
+        font-family: 'Source Sans Pro', Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    // Set serif
+    @if $style == serif {
+        font-family: 'Arvo', Times New Roman, serif;
+        font-weight: 600;
+    }
+}
+
+html {
+    font-size: 62.5%; // Set relative font size to base 10
+}
+
+body {
+    @include font(sans, 1.3rem);
+}
+
+h1, h2, h3, h4, h5 {
+    @include font(serif);
+    text-transform: uppercase;
+}
+
+// Style headers etc
+$heading-size: 4rem;
+
+h1 {font-size: $heading-size;}
+h2 {font-size: $heading-size*0.9;}
+h3 {font-size: $heading-size*0.8;}
+h4 {font-size: $heading-size*0.7;}
+h5 {font-size: $heading-size*0.6;}
+
+// Hide screen reader text
+.screen-reader-text {
+    display: none;
+}
