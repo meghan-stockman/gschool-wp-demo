@@ -1,4 +1,18 @@
-footer.site-footer {
-	background: black;
-	color: white;
-}
+#colophon {
+	background: blue-grey;
+	color: dark-blue;
+
+	footer.footer-nav {
+	a {
+          @include ease;
+          color: $dark-blue;
+          text-decoration: none;
+
+
+          &:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+            } // hover 
+          } // a
+      }// nav
+} // colophon
