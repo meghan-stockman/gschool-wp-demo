@@ -2,8 +2,30 @@
 	background: blue-grey;
 	color: dark-blue;
 
-	footer.footer-nav {
-	a {
+
+	img {
+	float: left;
+	width: 150px;
+	margin: 1em 0; 
+	@include breakpoint (tablet) {
+		float: none;
+		width: 100%; }
+	} // img
+
+		.menu-footer-navigation-container {
+ 		text-align: right;
+
+	li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 1em;
+        
+        
+        &:last-of-type {
+            margin-right: 0;  
+        } // last
+
+        a {
           @include ease;
           color: $dark-blue;
           text-decoration: none;
@@ -14,5 +36,21 @@
             text-decoration: none;
             } // hover 
           } // a
-      }// nav
+
+    } // li
+
+    @include breakpoint(tablet) {
+        float: none;
+        text-align: center;
+      } // break
+
+      } // nav
+
+    .menu-toggle {
+    display: none;
+  	}
 } // colophon
+
+footer .site-info {
+	text-align: center;
+}

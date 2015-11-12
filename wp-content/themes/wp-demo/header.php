@@ -28,7 +28,7 @@
 		<div class="row">
 			<div class="site-branding">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-   					<img src="<?php bloginfo('template_directory'); ?>/images/logo-header.png" alt="Larryville Blue" />
+   					<img id="header-logo" src="<?php bloginfo('template_directory'); ?>/images/logo-header.png" alt="Larryville Blue" />
 				</a>
 			</div><!-- .site-branding -->
 

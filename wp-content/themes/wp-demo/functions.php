@@ -44,8 +44,10 @@ function wp_demo_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'wp-demo' ),
-	) );
+    'primary' => __( 'Primary Menu', '_primary-menu' ), 
+    'footer' => __( 'Footer Menu', '_footer-menu' ),  // Footer menu
+    'social' => __( 'Social Menu', '_social-menu' ),   // If you want to use a social menu
+) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
