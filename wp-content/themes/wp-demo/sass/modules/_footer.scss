@@ -46,6 +46,40 @@
 
       } // nav
 
+      .menu-social-navigation-container {
+      	text-align: right;
+
+      	li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 1em;
+        
+        
+        &:last-of-type {
+            margin-right: 0;  
+        } // last
+
+        a {
+          @include ease;
+          color: $dark-blue;
+          text-decoration: none;
+
+
+          &:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+            } // hover 
+          } // a
+
+    } // li
+
+    @include breakpoint(tablet) {
+        float: none;
+        text-align: center;
+      } // break
+      
+  } // social nav
+
     .menu-toggle {
     display: none;
   	}

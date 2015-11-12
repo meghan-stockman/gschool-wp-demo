@@ -362,6 +362,26 @@ input[type="submit"] {
       #colophon .menu-footer-navigation-container {
         float: none;
         text-align: center; } }
+  #colophon .menu-social-navigation-container {
+    text-align: right; }
+    #colophon .menu-social-navigation-container li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 1em; }
+      #colophon .menu-social-navigation-container li:last-of-type {
+        margin-right: 0; }
+      #colophon .menu-social-navigation-container li a {
+        -webkit-transition: all 333ms ease-in-out;
+                transition: all 333ms ease-in-out;
+        color: #444351;
+        text-decoration: none; }
+        #colophon .menu-social-navigation-container li a:hover {
+          color: #FFFFFF;
+          text-decoration: none; }
+    @media (max-width: 800px) {
+      #colophon .menu-social-navigation-container {
+        float: none;
+        text-align: center; } }
   #colophon .menu-toggle {
     display: none; }
 
