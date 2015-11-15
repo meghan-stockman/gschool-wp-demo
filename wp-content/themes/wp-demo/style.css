@@ -517,4 +517,11 @@ body.home .portfolio {
 body.post-type-archive-portfolio .column:nth-child(3n) {
   margin-right: 0; }
 
+.nav-previous a {
+  float: left;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2em; }
+
 /*# sourceMappingURL=style.css.map */

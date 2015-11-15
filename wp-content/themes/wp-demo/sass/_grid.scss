@@ -31,6 +31,10 @@ $grid-gutter: 2%;
 		margin-right: 0;
 	}
 
+	&.portfolio {
+		
+	}
+
 	@include breakpoint(phone) {
 		width: 100% !important;
 		margin-right: 0;

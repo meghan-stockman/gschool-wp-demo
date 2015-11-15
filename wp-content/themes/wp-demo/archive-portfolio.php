@@ -22,9 +22,11 @@ get_header(); ?>
 
 				
 					 <div class="column third" style="background-image: url(<?php the_field('portfolio_feature_image'); ?>);">
-					    <h3><?php the_title(); ?></h3>
-					    <a href="<?php the_permalink(); ?>">➞</a>
+					    <div class="portfolio-color-overlay"></div>
+					    <h3 class="portfolio-title"><?php the_title(); ?></h3>
+					    <a class="portfolio-link" href="<?php the_permalink(); ?>"><span class="dashicons dashicons-arrow-right-alt"></span></a>
 					</div>
+					
 					
 			<?php endwhile; ?>
 			</div> <!-- End Row -->
