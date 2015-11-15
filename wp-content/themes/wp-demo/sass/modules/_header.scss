@@ -1,5 +1,5 @@
 #masthead {
-	background: $blue-grey;
+	background: $police-blue;
 
 	img {
 	float: left;
@@ -25,8 +25,9 @@
 
         a {
           @include ease;
-          color: $dark-blue;
+          color: $light-blue;
           text-decoration: none;
+          font-size: 1.2em;
 
 
           &:hover {

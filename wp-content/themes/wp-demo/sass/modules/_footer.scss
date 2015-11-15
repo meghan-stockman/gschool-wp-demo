@@ -1,6 +1,6 @@
 #colophon {
-	background: blue-grey;
-	color: dark-blue;
+	background: $police-blue;
+	color: $light-blue;
 
 
 	img {
@@ -12,7 +12,8 @@
 		width: 100%; }
 	} // img
 
-		.menu-footer-navigation-container {
+		.menu-footer-navigation-container,
+		.menu-social-navigation-container {
  		text-align: right;
 
 	li {
@@ -27,7 +28,7 @@
 
         a {
           @include ease;
-          color: $dark-blue;
+          color: $light-blue;
           text-decoration: none;
 
 
@@ -46,40 +47,7 @@
 
       } // nav
 
-      .menu-social-navigation-container {
-      	text-align: right;
-
-      	li {
-        list-style: none;
-        display: inline-block;
-        margin-right: 1em;
-        
-        
-        &:last-of-type {
-            margin-right: 0;  
-        } // last
-
-        a {
-          @include ease;
-          color: $dark-blue;
-          text-decoration: none;
-
-
-          &:hover {
-            color: #FFFFFF;
-            text-decoration: none;
-            } // hover 
-          } // a
-
-    } // li
-
-    @include breakpoint(tablet) {
-        float: none;
-        text-align: center;
-      } // break
-      
-  } // social nav
-
+    
     .menu-toggle {
     display: none;
   	}
