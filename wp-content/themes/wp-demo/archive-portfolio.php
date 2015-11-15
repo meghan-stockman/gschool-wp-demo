@@ -14,24 +14,19 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			<h2 class="portfolio-headline underline">Popular Comics</h2><!-- .page-header -->
+			<h2 class="portfolio-headline">Popular Comics</h2><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<div class="row">
-				<?php while ( have_posts() ) : the_post(); ?> <!-- Start Loop -->
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			    <div class="column third" style="background-image: url(<?php the_field('portfolio_feature_image'); ?>);">
-				    <div class="portfolio-color-overlay"></div>
-				    <h3 class="portfolio-title"><?php the_title(); ?></h3>
-				    <a class="portfolio-link" href="<?php the_permalink(); ?>"><span class="dashicons dashicons-arrow-right-alt"></span></a>
-				</div>
-
-			    <?php endwhile; ?> <!-- End Loop -->
+				
+					 <div class="column third" style="background-image: url(<?php the_field('portfolio_feature_image'); ?>);">
+					    <h3><?php the_title(); ?></h3>
+					    <a href="<?php the_permalink(); ?>">➞</a>
+					</div>
+					
+			<?php endwhile; ?>
 			</div> <!-- End Row -->
 
 			<?php the_posts_navigation(); ?>
