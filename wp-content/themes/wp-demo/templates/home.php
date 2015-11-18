@@ -2,7 +2,7 @@
 /**
  * Template Name: Home Page
  *
- * @package page-home
+ * @package WordPress_Demo
  */
 
 get_header();
@@ -13,10 +13,19 @@ get_header();
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="hero" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
-				    <h1><?php the_field('hero_headline'); ?></h1>
-				    <p><?php the_field('hero_subheadline'); ?></p>
+
+				<div class="hero">
+					<div class="row">
+						<div class="column third">
+				    		<h1><?php the_field('hero_headline'); ?></h1>
+				    		<p><?php the_field('hero_subheadline'); ?></p>
+				    	</div>
+				    	<div class="column two-third">
+				    		<img src="<?php the_field('hero_background_image'); ?>">
+				    	</div>
+				    </div>
 				</div>
+
 
 				<!-- Begin Services -->
 				<div class="services">

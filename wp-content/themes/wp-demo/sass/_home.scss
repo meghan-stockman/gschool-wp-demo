@@ -1,8 +1,13 @@
 .hero {
-	padding: 100em 0;
-	text-align: center;
+	padding: 5em 0;
 
-	@include background-image;
+	.third {
+		text-align: left;
+	}
+
+	.two-third {
+		text-align: center;
+	}
 
 	h1, p{
 	margin: 0;
@@ -21,64 +26,6 @@
 		} 
 } // end services
 
-body.home .portfolio {
-    text-align: center;
-    padding: 3em 0;
-
-    .column {
-        position: relative;
-        padding: 5em 0;
-        @include background-image(scroll);
-
-        h3, a {
-        	position: relative;
-            color: white;
-            opacity: 0;
-            z-index: 99;
-
-            @include ease;
-        } // end h3, a
-
-        a {
-            $arrowOffset: 0.3em;
-
-            display: inline-block;
-            text-decoration: none;
-            height: 2em - $arrowOffset;
-            width: 2em;
-            padding-top: $arrowOffset;
-            border: 2px solid white;
-            border-radius: 50%;
-        }
-
-        &:after {
-            content: '';
-            background: $light-blue;
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            @include ease;
-        }
-
-        &:hover {
-            h3, a { opacity: 1; }
-
-            &:after {
-                opacity: 0.8;
-            }
-        } // hover
-    } // column
-} // portfolio
-
-
-body.post-type-archive-portfolio {
-	.column:nth-child(3n) {
-		margin-right: 0;
-	}
-}
 
 .recent-blog {
 	background: $grey;

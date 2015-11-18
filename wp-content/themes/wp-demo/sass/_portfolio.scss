@@ -1,7 +1,11 @@
 
-body.home .portfolio {
+body.home .portfolio,
+body.single-portfolio .portfolio,
+body.post-type-archive-portfolio .portfolio{
     text-align: center;
     padding: 3em 0;
+    max-width: 100%;
+
 
     .column {
         position: relative;
@@ -52,16 +56,37 @@ body.home .portfolio {
 } // portfolio
 
 
-body.post-type-archive-portfolio {
-	.column:nth-child(3n) {
-		margin-right: 0;
-	}
+
+
+.portfolio-headline {
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
 }
 
-.nav-previous a {
-	float: left;
-	display: block;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 1.2em;
+.column:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+
+.nav-links {
+	@extend .row;
+
+	a { 
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1.2em;
+	}
+
+	.nav-previous {
+		float: left;
+
+		// &:before {}
+	}
+
+	.nav-next {
+		float: right;
+	}
+		
 }
